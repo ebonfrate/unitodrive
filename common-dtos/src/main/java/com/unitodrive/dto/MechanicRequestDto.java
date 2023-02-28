@@ -9,5 +9,8 @@ public class MechanicRequestDto {
     private String garageAddress;
     private String serviceName;
     private Integer bookingId;
+    private String dayAvailability;
+    // TODO
+
 
 }

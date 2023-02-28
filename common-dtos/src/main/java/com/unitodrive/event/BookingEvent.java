@@ -8,7 +8,6 @@ public class BookingEvent implements Event{
     private UUID eventId=UUID.randomUUID();
     private Date eventDate=new Date();
 
-
     @Override
     public UUID getEventId() { return eventId; }
 
