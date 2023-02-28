@@ -1,5 +1,11 @@
 package com.unitodrive.mechanic;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class MechanicServiceApplication {
-    // choreography-saga-pattern relation
+    public static void main(String[] args) {
+        SpringApplication.run(MechanicServiceApplication.class);
+    }
 }

@@ -1,5 +1,11 @@
 package com.unitodrive.booking;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class BookingServiceApplication {
-    // choreography-saga-pattern relation
+    public static void main(String[] args) {
+        SpringApplication.run(BookingServiceApplication.class);
+    }
 }
