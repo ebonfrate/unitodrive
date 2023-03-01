@@ -13,7 +13,9 @@ public class MechanicResponseDto {
     private String garageAddress;
     private String serviceName;
     private Integer bookingId;
-    private DateTimeFormatter slotStart;
-    private DateTimeFormatter slotEnd;
+    private String dayAvailability;
+    private String slotStart;
+    private String slotEnd;
+    private Integer carsForSlot;
     private MechanicStatus mechanicStatus;
 }

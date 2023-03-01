@@ -10,7 +10,8 @@ public class MechanicRequestDto {
     private String serviceName;
     private Integer bookingId;
     private String dayAvailability;
-    // TODO
-
+    private String slotStart;
+    private String slotEnd;
+    private Integer carsForSlot;
 
 }
