@@ -1,5 +1,5 @@
-FROM openjdk:13-alpine
-LABEL author=”Ginko”
+FROM openjdk:17
+LABEL author=”gruppo9”
 RUN addgroup -S spring && adduser -S spring -G spring
 VOLUME /costumer-service
 EXPOSE 8080
