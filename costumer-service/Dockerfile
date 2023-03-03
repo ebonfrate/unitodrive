@@ -1,4 +1,4 @@
-FROM openjdk:21-slim-buster
+FROM openjdk:13-alpine
 LABEL author=”Ginko”
 RUN addgroup -S spring && adduser -S spring -G spring
 VOLUME /costumer-service
