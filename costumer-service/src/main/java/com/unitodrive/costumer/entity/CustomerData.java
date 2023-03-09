@@ -2,27 +2,33 @@ package com.unitodrive.costumer.entity;
 
 import com.unitodrive.event.BookingStatus;
 import com.unitodrive.event.MechanicStatus;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Entity
 @Table(name = "CUSTOMER_DATA_TBL")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class CustomerData {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Integer id;
+    @Column(name = "UserMail")
     private String userMail;
+    @Column(name = "UserName")
     private String userName;
+    @Column(name = "BookingId")
     private Integer bookingId;
 
+    @Column(name = "BookingStatus")
     @Enumerated(EnumType.STRING)
     private BookingStatus bookingStatus;
+    @Column(name = "MechanicStatus")
     @Enumerated(EnumType.STRING)
     private MechanicStatus mechanicStatus;
 
