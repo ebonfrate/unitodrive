@@ -8,5 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/customer")
 public class CustomerController {
 
-    private CustomerService customerService()
+    private CustomerService customerService() {
+        return null;
+    }
 }
