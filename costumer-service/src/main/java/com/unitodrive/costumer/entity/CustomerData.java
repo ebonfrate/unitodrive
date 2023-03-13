@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CustomerData {
-
+//ti odio
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
